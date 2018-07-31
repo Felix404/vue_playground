@@ -1,19 +1,9 @@
 <template>
 
     <div id="content">
-        <div>
             <Sidebar></Sidebar>
-        </div>
-        <div>
-            <PostBox></PostBox>
-            <Newsfeed></Newsfeed>
-        </div>
-        <div>
+            <Maincontent></Maincontent>
             <Rightside></Rightside>
-        </div>
-
-
-
     </div>
 
 </template>
@@ -21,13 +11,12 @@
 <script>
 
 import Sidebar from './../Sidebar'
-import PostBox from './../PostBox'
-import Newsfeed from './../Newsfeed'
+import Maincontent from './../Maincontent'
 import Rightside from './../Rightside'
 
 export default {
   components :{
-    Sidebar,PostBox,Newsfeed,Rightside
+    Sidebar,Maincontent,Rightside
   }
 }
 </script>
@@ -35,9 +24,10 @@ export default {
 <style>
     #content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         vertical-align: middle;
         width: 1224px;
         margin: auto;
+background: linear-gradient(to right, #3f4054 , #363745);
     }
 </style>

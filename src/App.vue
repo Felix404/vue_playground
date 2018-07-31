@@ -2,7 +2,6 @@
   <div id="app">
     <HeaderBar></HeaderBar>
     <Main></Main>
-    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -25,4 +24,20 @@ export default {
 </script>
 
 <style>
+  * {
+    color:#85878a;
+  }
+  body {
+    margin: 0;
+  }
+  div {
+    border: solid 1px;
+    margin: 2px;
+  }
+  #app {
+    border: none;
+    background: linear-gradient(to bottom right, #8d92a7 , #35384d);
+    background-attachment: fixed;
+    margin: 0;
+  }
 </style>

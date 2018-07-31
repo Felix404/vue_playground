@@ -17,6 +17,7 @@ module.exports = {
 <style scoped>
    .header-bar {
     width: 100%;
+    height: 70px;
     text-align: center;
     border: solid 1px;
   }

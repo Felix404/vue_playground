@@ -1,6 +1,8 @@
 <template>
 
-    <div>{{ msg }}</div>
+    <div class="rightside-container">
+      <p>{{ msg }}</p>
+    </div>
 
 </template>
 
@@ -16,4 +18,9 @@ export default {
 </script>
 
 <style>
+  .rightside-container {
+    width: 230px;
+    text-align: center;
+    flex-shrink: 0;
+  }
 </style>
