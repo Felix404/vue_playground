@@ -28,6 +28,17 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
-  }
+    "webpack-dev-server": "^2.9.1",
+    "vue-router": "^3.0.1",
+    "material-design-icons": "^3.0.1"
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felix404/vue_playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Felix404/vue_playground/issues"
+  },
+  "homepage": "https://github.com/Felix404/vue_playground#readme"
 }

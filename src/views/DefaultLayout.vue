@@ -10,9 +10,9 @@
 
 <script>
 
-import Sidebar from './../Sidebar'
-import Maincontent from './../Maincontent'
-import Rightside from './../Rightside'
+import Sidebar from './../components/Sidebar'
+import Maincontent from './../components/Maincontent'
+import Rightside from './../components/Rightside'
 
 export default {
   components :{
@@ -28,6 +28,6 @@ export default {
         vertical-align: middle;
         width: 1224px;
         margin: auto;
-background: linear-gradient(to right, #3f4054 , #363745);
+        background: linear-gradient(to right, #3f4054 , #363745);
     }
 </style>

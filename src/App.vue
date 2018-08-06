@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <HeaderBar></HeaderBar>
-    <Main></Main>
+    <!--Main></Main-->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 
 import HeaderBar from './components/HeaderBar'
-import Main from './components/layouts/DefaultLayout'
+import Main from './views/DefaultLayout'
+import router from './router'
 
 export default {
   name: 'app',
+  router,
   data () {
     return {
       msg: 'Welcome to Your Vue.js App.'
@@ -20,6 +23,7 @@ export default {
   components :{
     HeaderBar,Main
   }
+
 }
 </script>
 
