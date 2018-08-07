@@ -11,6 +11,7 @@
 import HeaderBar from './components/HeaderBar'
 import Main from './views/DefaultLayout'
 import router from './router'
+import store from './store'
 
 export default {
   name: 'app',
@@ -22,8 +23,8 @@ export default {
   },
   components :{
     HeaderBar,Main
-  }
-
+  },
+  store
 }
 </script>
 

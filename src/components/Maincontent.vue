@@ -1,7 +1,7 @@
 <template>
   <div class="maincontent-container">
     <PostBox></PostBox>
-    <Newsfeed v-bind:initialPosts="6"></Newsfeed>
+    <Newsfeed></Newsfeed>
   </div>
 </template>
 

@@ -12,26 +12,27 @@
 import Post from './Post'
 
 export default {
-  props: ['initialPosts'],
   data () {
-    let result = {posts:[]};
-    
-    for(let id=0; id < this.initialPosts;id++) {
-      result.posts[id] = this.getRandomPost(id);
+    return {
+      loading: false
     }
-    return result;
   },
-  methods: {
-    getRandomPost(number){
-      return {
-        id:number, 
-        owner:"random name" + number, 
-        content: "random content" + number};
+  computed: {
+    posts () {
+      return this.$store.state.posts
     }
   },
   components :{
     Post
   },
+  created: function () {
+      console.log(this.$store.state.posts);
+    this.loading = true
+    this.$store.dispatch('fetchPosts')
+      .then(posts => {
+        this.loading = false
+      })
+  }
 }
 </script>
 
